@@ -1,0 +1,314 @@
+.items{
+    display: flex;
+    justify-content: center;
+    margin-left:10px;
+}
+.item button{
+    background-color:transparent;
+    border:2px solid rgb(5, 234, 5);
+    font-size:17px;
+    font-weight: bold;
+    color:rgb(29, 217, 29);
+    padding:10px;
+}
+
+
+
+
+.footer4 ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+.item button:hover{
+    cursor: pointer;
+    background-color:rgb(29, 217, 29);
+    color:white;
+}
+#item{
+    margin:3px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    width:400px;
+    background-size:cover;
+    background-repeat: no;
+    background-position: center center;
+    background-image: url('https://img.freepik.com/premium-photo/black-sports-shoe-black-background_955012-1697.jpg');
+}
+#item1{
+
+    margin:3px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    width:400px;
+    background-size:cover;
+    background-repeat: no;
+    background-position: center center;
+    background-image: url('https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+
+}
+#item2{
+
+    margin:3px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    width:400px;
+    background-size:cover;
+    background-repeat: no;
+    background-position: center center;
+    background-image: url('https://images.pexels.com/photos/1503009/pexels-photo-1503009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+
+}
+
+
+.shoes{
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+
+}
+.shoe span{
+    font-size:20px;
+}
+.shoe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:400px;
+    width:300px;
+}
+.footer1{
+display: flex;
+justify-content: center;
+align-items:center;
+display: flex;
+flex-direction: column;
+    height:200px;
+background-color:rgba(0, 0, 0, 0.801);
+}
+.shoes img:hover{
+    cursor:pointer;
+   
+}
+.footer1 img{
+    height:50px;
+    width: 100px;
+    margin:5px;
+}
+.l{
+    width:50%;
+    height: 0px;
+    border:2px solid white;
+}
+.li{
+    font-size:20px;
+    margin-top:20px;
+    align-items: center;
+    width:90vw;
+    display: flex;
+    color:white;
+}
+.footer2{
+    margin:28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.panel{
+    margin:10px;
+    display: flex;
+}
+.info1{
+    width:50%;
+    display: flex;
+}
+.footer3{
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.801);
+    height: 100px;
+}
+.footer3 i{
+margin-right: 5px;
+font-size:30px;
+}
+.footer3 span{
+    display: flex;
+    align-items: center;
+}
+.cont{
+    margin:10px;
+}
+.footer4{
+    background-color:rgba(0, 0, 0, 0.801);
+
+}
+.footer4 ul{
+    list-style-type: none;
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+.footer4{
+    justify-content: space-evenly;
+    display: flex;
+}
+.radio{
+    display: flex;
+
+    align-items: center;
+
+}
+
+.radio1{
+    display: flex;
+    align-items: center;
+    margin:5px;
+}
+.box{
+    justify-content: center;
+color:white;
+}
+
+.email{
+    background-color:rgb(45, 221, 45);
+    display: flex;
+    align-items: center;
+    width:280px;
+}
+
+.box span{
+    text-align: center;
+}
+
+.email input{
+    font-size:20px;
+    width:250px;
+}
+.payment{
+    padding-top:35px;
+    justify-content: center;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.801);
+    display: flex;
+}
+.payment span{
+    margin:8px;
+}
+.footer5{
+    color:white;
+    justify-content: space-between;
+    background-color:rgba(0, 0, 0, 0.801);
+display: flex;
+}
+.co{
+    align-items: center;
+    display: flex;
+}
+.co1{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cool1{
+    display: flex;
+    align-items: center;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+.cool1 i{
+    margin:10px;
+    font-size:30px;
+}
+#cont2{
+    display: flex;
+}
+.co img{
+    margin-right:14px;
+}
+.white{
+    background-color: white;
+}
+.account{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.orders{
+    cursor:pointer;
+    border:2px solid black;
+    border-radius: 10px;
+    padding:26px;
+    margin:8px;
+    display: flex;
+    height: 165px;
+    width:300px;
+   
+}
+.orders:hover{
+    background-color:rgb(228, 236, 242);
+}
+.ordercontent{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+}
+.orders img{
+    height: 50px;
+}
+.orders p{
+    margin:0px;
+}
+.youraccount{
+    padding:24px 0px;
+    display: block;
+    width:1300px;
+   margin:auto;
+}
+
+.center{
+    text-align: center;
+}
+.line1{
+    width:93%;
+    margin:25px;
+    border:2px solid black;
+}
+.information{
+    margin-bottom:34px;
+    margin-left:44px;
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.infoitem{
+    width:380px;
+    padding:25px;
+    border:2px solid black;
+    border-radius: 10px;
+    height: 250px;
+    display: flex;
+    margin:10px;
+    flex-direction: column;
+}
+.infoitem a{
+    text-decoration: none;
+    font-size:20px;
+}
+.infoitem a:hover{
+    color:red;
+    text-decoration: underline;
+}
