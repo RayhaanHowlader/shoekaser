@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoekaser Sign up</title>
+<style>
+*{
+    font-family: "Ubuntu", sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .container{
+        display: flex;
+        height:100vh;
+        width:100vw;
+    }
+
+.form{
+    
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    width:50%;
+}
+.image{
+    width: 50%;
+    height: 100%;
+}
+
+.navbar{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar select{
+    color:black;
+    border-radius: 10px;
+}
+.content{
+    font-size:22px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.content button{
+    cursor: pointer;
+    font-size:18px;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width:333px;
+    justify-content: center;
+}
+.content button img{
+    cursor: pointer;
+    margin-right: 2px;
+    height: 20px;
+    width: 20px;
+}
+
+.title{
+    margin:10px;
+}
+.line{
+    width:50px;
+    height:2px;
+    border: 2px solid black;
+}
+.or{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height:40px;
+  
+}
+.content input{
+    margin:10px;
+    padding:10px;
+    /* height: 20px; */
+    width:333px;
+    font-size:20px;
+    border-radius: 10px;
+}
+.fpass{
+    align-self: flex-end;
+    width:300px;
+}
+
+
+#log{
+background-color:black;
+color:white;
+border-radius: 20px;
+margin-top:16px;
+}
+.dont{
+    margin-top:16px;
+}
+
+.image{
+  
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    background-image: url('https://t4.ftcdn.net/jpg/04/10/65/53/360_F_410655365_MjietOoPZAMAdqA74M6EXqRL3F8g5dHH.jpg');
+}
+
+
+.co{
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+.co ul{
+    margin:35px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.image ul li{
+    list-style-type: none;
+}
+.image ul a{
+    padding:10px;
+    font-size:20px;
+    color:White;
+    text-decoration: none;
+}
+.join{
+    cursor:pointer;
+    border:2px solid white;
+    border-radius: 10px;
+}
+.join:hover{
+    background-color:blue;
+}
+
+select{
+    font-size:20px;
+}
+.tco{
+    display: flex;
+    justify-content: center;
+    font-size:2.5rem;
+    color:white;
+}
+
+
+.heading{
+    font-size:4rem;
+    font-weight: bolder;
+}
+.up:hover{
+   cursor:pointer;
+   text-decoration: underline;
+}
+.navhead{
+    font-size:26px;
+}
+.dont a{
+    font-size:19px;
+    color:blue;
+    text-decoration: none;
+}
+.dont a:hover{
+    text-decoration: underline;
+}
+.fpass a{
+    font-size:20px;
+    color:blue;
+    text-decoration: none;
+}
+.fpass a:hover{
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="navbar">
+                <h2 class="navhead">Shoekaser</h2>
+                <select name="" id="">
+                    <div><img src="india.png" alt="" srcset=""></div>
+                    <option value="English">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+
+            <div class="content">
+                <span class="heading">Hi There</span>
+                <span class="title">Welcome To shoekasker bhai!</span>
+                <button><img src="https://static-00.iconduck.com/assets.00/google-icon-1024x1024-ilkrdfcp.png" alt=""><span>Login with Google</span></button>
+                <div class="or">
+                    <div class="line"></div>&nbsp;or &nbsp;<div class="line"></div>
+                     </div>
+
+                     <input type="email" name="" id="" placeholder="Enter Your email">
+                     <input type="password" name="" id="" placeholder="Enter Your Password">
+                     <div class="fpass"><a href="">forgot password?</a></div>
+                     <button id="log">Log in</button>
+                     <span class="dont">Dont have a Account <a href="">Sign up</a></span>
+                    </div>
+           
+
+
+        </div>
+        <div class="image">
+            <div class="co">
+            <ul>
+                <li><a class="up">Sign up</a></li>
+                <li><a class="join">Join Us</a></li>
+            </ul>
+           </div>
+
+
+           <div class="tco">
+            Best Shoe Brands Available Here!!
+           </div>
+
+        </div>
+    </div>
+</body>
+</html>
