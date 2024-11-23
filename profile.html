@@ -1,0 +1,586 @@
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikes Best Shoes Collection</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai 2", serif;
+
+}
+.header{
+    margin-left:20vw;
+    color:white;
+display: flex;
+height: 100%;
+}
+header{
+ 
+    height:50px;
+    background-color:black;
+}
+.line{
+    margin-left:15px;
+    display: inline-block;
+    width:0px;
+    height:100%;
+    transform:rotate(206deg);
+    border:1px solid white;
+}
+.medal {
+display: flex;
+align-items: center;
+
+margin: 10px;
+padding:6px;
+font-size:24px;
+}
+.medal i{
+    margin-right:12px;
+}
+.medal span{
+font-size:15px;
+}
+.delivery{
+    display: flex;
+    align-items: center;
+margin:10px;
+padding:5px;
+}
+.delivery i{
+    font-size: 20px;
+margin-right:10px;
+}
+.bank i{
+    font-size:20px;
+    color:white;
+    margin-right:10px;
+}
+.bank{
+    padding: 0px 14px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar{
+    /* height:230px; */
+    height:100px;
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+ /* justify-content: center; */
+ justify-content: space-around;
+}
+.navbar img{
+    margin-left:23px;
+    margin-top:13px;
+    height: 50px;
+    width: 100px;
+}
+.text{
+    width:36vw;
+}
+.text input{
+    width:33vw;
+    font-size:20px;
+    padding:10px;
+    border:none;
+}
+.text{
+    box-shadow:5px 5px 5px 5px rgb(230, 213, 213);
+}
+.text:hover{
+    box-shadow:5px 5px 5px 5px rgb(0, 209, 0);
+
+}
+.cart{
+    display: flex;
+    align-items: center;
+    margin-right:23px;
+}
+.cart a{
+    text-decoration: none;
+    padding:23px;
+    color:black;
+    font-size:18px;
+  
+    
+}
+.cart a:hover{
+    color:white;
+    font-weight: bolder;
+    background-color: rgb(0, 209, 0);
+}
+.cart i{
+    cursor: pointer;
+    font-size:34px;
+}
+
+
+
+
+
+/* Chatgpt code */
+.angled-button {
+    display: inline-block;
+    background-color: #4caf50; /* Green color */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%); /* Creates the angled effect */
+}
+
+.angled-button .arrow {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/* Optional hover effect */
+.angled-button:hover {
+    cursor: pointer;
+    background-color: #43a047; /* Slightly darker green for hover */
+}
+
+
+
+.navmenu{
+    align-items: center;
+    display: flex;
+    
+}
+.menu{
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.navmenu li{
+    list-style-type:none;
+}
+.navmenu li a{
+    font-size:18px;
+    color:black;
+    padding:15px 23px ;
+    text-decoration: none;
+
+}
+.login{
+display: flex;
+align-items: center;
+}
+.login li{
+    list-style-type: none;
+}
+.login li a:hover{
+    color:white;
+    background-color:rgb(14, 208, 14);
+}
+
+
+
+.login li a{
+    font-size:20px;
+    color:black;
+    text-decoration: none;
+    padding:23px;
+}
+
+.navmenu li a:hover{
+    font-weight: bolder;
+    color:white;
+    background-color:rgb(14, 208, 14);
+}
+.bg-image{
+    display: block;
+    margin:auto;
+    justify-content: center;
+    height:400px;
+    width:85vw;
+    /* margin-left:40px; */
+}
+.patners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-image img{
+width:1200px;
+height: 400px;
+}
+
+
+@media only screen and (max-width:1050px){
+    .navbar{
+        display:flex;
+        height: 230px;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:1016px){
+    .menu{
+        justify-content: flex-start;
+        width: 100vw;
+    }
+    .navmenu li a{
+
+        padding:10px;
+    }
+}
+
+@media only screen and (max-width:997px){
+    .info1{
+        width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+}
+@media only screen and (max-width:863px){
+    .footer1{
+        width:100vw;
+    }
+    .footer1 img{
+
+        width:80px;
+        background-color:green;
+    
+    }
+}
+
+
+
+
+@media only screen and (max-width:799px){
+    .footer1{
+        width:100vw;
+    }
+    .footer1 img{
+
+        width:60px;
+        background-color:green;
+    
+    }
+}
+
+@media only screen and (max-width:809px){
+    .email{
+        background-color: red;
+        width:17vw;
+    }
+    .email input{
+        font-size:14px;
+        width:14vw;
+    }
+
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="header">
+
+            <div class="line"></div>
+            <img src="sports.png" alt=""  srcset="">
+            <div class="line"></div>
+            <div class="medal">
+                <i class="fa-solid fa-medal" style="color: #ffffff;"></i>
+                <span>One of the greatest ?team sport dealer in germany</span>
+            </div>
+        <div class="line"></div>
+        <div class="delivery">
+            <i class="fa-solid fa-truck" style="color:white"></i>
+            <span>Fast Delivery</span>
+        </div>
+        <div class="line"></div>
+        <div class="bank">
+        <i class="fa-solid fa-piggy-bank"></i>
+        <span>Free delivery within India ? Germany 75 &euro;</span>
+    </div>    
+    </div>
+    </header>
+    <div class="navbar">
+        
+        <img src="logo.png" alt="" srcset="">
+        <div class="text">
+        <input type="text" name="" id="" placeholder="Looking for..">
+        <i class="fa-solid fa-magnifying-glass"></i>    
+    </div>
+    <div class="cart">
+       
+            <a href="#">Login</a>
+           <a href="#">My Account</a>  
+           
+    <i class="fa-solid fa-cart-shopping"></i>
+</div>    
+</div>
+<div class="menu">
+    <div class="angled-button">
+        SPORTS <span class="arrow">↓</span>
+    </div>
+    
+        <ul class="navmenu">
+           <li><a href="http://127.0.0.1:5500/home/index.html">Home</a></li>
+           <li><a href="#">Jersey and Fan Items</a></li>
+           <li><a href="#">Shoes</a></li>
+           <li><a href="#">Products</a></li>
+           <li><a href="#">Contact Us</a></li>
+           <li><a href="#">Equipment</a></li>
+           <li><a href="#">Brands</a></li>
+           
+        </ul>
+<!-- <ul class="login">
+<li><a href="#">Login</a></li>
+<li><a href="#">My Account</a></li>    
+</ul> -->
+</div>
+<div class="youraccount">
+    <h1 class="center">Your Account</h1>
+
+<div class="account">
+
+
+    <div class="orders">
+        <div><img src="https://m.media-amazon.com/images/G/31/x-locale/cs/ya/images/Box._CB485927553_.png" alt="" srcset=""></div>
+        <div class="ordercontent">
+            <h4>Your Orders</h4>
+            <p>Track return or buy things</p>
+            <p>again</p>
+
+        </div>
+        </div>
+
+
+        <div class="orders">
+        <div><img src="https://m.media-amazon.com/images/G/31/x-locale/cs/ya/images/sign-in-lock._CB485931504_.png" alt="" srcset=""></div>
+        <div class="ordercontent">
+            <h4>Login & Security</h4>
+            <p>Edit,login,name and mobile</p>
+            <p>number</p>
+
+        </div>
+        </div>
+
+        <div class="orders">
+        <div><img src="https://m.media-amazon.com/images/G/31/x-locale/cs/ya/images/address-map-pin._CB485934183_.png" alt="" srcset=""></div>
+        <div class="ordercontent">
+            <h4>Your addresses</h4>
+            <p>Edit addresses for orders and</p>
+            <p>gifts</p>
+
+        </div>
+        </div>
+        <div class="orders">
+        <div><img src="https://m.media-amazon.com/images/G/31/x-locale/cs/ya/images/Payments._CB485926359_.png" alt="" srcset=""></div>
+        <div class="ordercontent">
+            <h4>Payment Options</h3>
+            <p>Edit or add payment methods</p>
+         
+
+        </div>
+
+        </div>
+        <div class="orders">
+        <div><img src="https://m.media-amazon.com/images/G/31/x-locale/cs/ya/images/amazon_pay._CB485946857_.png" alt="" srcset=""></div>
+        <div class="ordercontent">
+            <h4>Nikke Pay</h4>
+            <p>Edit or add payment methods</p>
+         
+
+        </div>
+    </div>
+    </div>
+</div>
+<div class="line1"></div>
+</div>
+ 
+<div class="information">
+    <div class="infoitem">
+        <h4>Digital content and services</h5>
+        <a href="">Apps and More</a>
+        <a href="">Content and Devices</a>
+        <a href="">Digital gifts you 've recieved</a>
+    </div>
+    
+    <div class="infoitem">
+        <h4>Email alerts,messages, and ads</h5>
+        <a href="">Advertising preferences</a>
+        <a href="">Communication preferences</a>
+        <a href="">SMS alert preferences</a>
+        <a href="">Message Centers</a>
+    </div>
+
+    <div class="infoitem">
+        <h4>More ways to Pay</h5>
+        <a href="">Default Purchase Settings</a>
+        <a href="">Amazon Pay</a>
+        <a href="">Coupuons</a>
+    </div>
+
+    <div class="infoitem">
+        <h4>Ordering and Shopping preferences</h5>
+        <a href="">Leave Packing Feedback</a>
+        <a href="">Lists</a>
+        <a href="">Profile</a>
+        <a href="">Language Settings</a>
+    </div>
+
+    <div class="infoitem">
+        <h4>Other Accounts</h5>
+        <a href="">Account Linking</a>
+        <a href="">Seller account</a>
+        <a href="">shoekaser web services</a>
+    </div>
+
+    <div class="infoitem">
+        <h4>Shopping programs and rentals</h4>
+        <a href="">Manage Your shoekaser family</a>
+        <a href="">Subscribe and Save</a>
+        <a href="">Shop the kids Store by age</a>
+    </div>
+
+    <div class="infoitem">
+        <h4>Subscription</h5>
+        <a href="">Email</a>
+        <a href="">Membership and Subscription</a>
+        </div>
+
+    <div class="infoitem">
+        <h4>Manage Your Data</h5>
+        <a href="">Request Your Data</a>
+        <a href="">Manage apps and services with data access</a>
+        <a href="">Close Your Amazon Account</a>
+        <a href="">Privacy Notice</a>
+    </div>
+
+
+</div>
+<div class="footer3">
+    <div class="cont">
+        <span><i class="fa-solid fa-medal" style="color: #ffffff;"></i>One of the greatest</span>
+    </div>
+    <div class="cont">
+        <span><i class="fa-solid fa-truck" style="color: #ffffff;"></i>Fastest Delivery</span>
+    </div>
+    <div class="cont">
+        <span>Follow Us</span>
+    </div>
+    <div class="cont">
+        <span><i class="fa-brands fa-facebook" style="color:rgb(1, 66,178); background-color: white;;"></i></span>
+    </div>
+    <div class="cont">
+        <span><i class=" white fa-brands fa-youtube" style="color: #b92d2d;"></i></span>
+    </div>
+    <div class="cont">
+        <span><i class="white fa-brands fa-twitter" style="color: #005eff;"></i></span>
+    </div>
+    <div class="cont">
+        <span><i class="white fa-brands fa-instagram" style="color: #000000;"></i></span>
+    </div>
+</div>
+
+<div class="footer4">
+    <ul>
+        <li><h3>Sports</h3></li>
+        <li>Soccer</li>
+        <li>Handball</li>
+        <li>Tennis</li>
+    </ul>
+
+    <ul>
+        <li><h3>Information</h3></li>
+        <li>Impressum</li>
+        <li>Conditions</li>
+        <li>Data Protection</li>
+        <li>Shipping and Charges </li>
+        <li>Delivery Terms</li>
+    </ul>
+    <ul>
+        <li><h3>Categories</h3></li>
+        <li>Shoes</li>
+        <li>Clothing</li>
+        <li>Equipment</li>
+    </ul>
+    <ul>
+        <li><h3>Brands</h3></li>
+        <li>Adidas</li>
+        <li>Alpas</li>
+        <li>Asics</li>
+        <li>Babolat</li>
+        <li>Erima</li>
+    </ul>
+  <div class="box">
+    <h3>Complaint</h3>
+    <span>If you have any queries</span>
+    <div class="radio">
+     <div class="radio1"> <label for="male">Male</label><input type="radio" name="name" id="male"></div>
+        <div class="radio1"> <label for="female">Female</label><input type="radio" name="name" id="female"></div>
+    </div>
+    <div class="email"><input type="email" name="" id="" placeholder="Enter Your email"> 
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+    </div>
+  </div>
+</div>
+<div class="payment">
+    <span><h3>Payment methods</h3></span>
+    <span><img src="visa.png" alt="" srcset=""></span>
+    <span><img src="master.png" alt="" srcset=""></span>
+    <span><img src="paypal.png" alt="" srcset=""></span>
+    <span><img src="sofort.png" alt="" srcset=""></span>
+    <span><img src="vor.png" height="34px" width="78px" alt="" srcset=""></span>
+    <span><img src="giro.png" height="34x" width="78px" alt="" srcset=""></span>
+</div>
+
+<div class="footer5">
+
+    <div class="co">
+        <img src="logo.png" height="90px" width="100px" alt="" srcset="">
+        <div class="co1">
+           <span>&copy; 2018 - Teamsport Philip</span> 
+           <span>All rights Reserved</span>
+        </div>
+    
+    </div>
+    <div class="cool1">
+
+
+        <div class="cont"> 
+        <i class="fa-solid fa-location-dot" ></i>
+        <span>We Stadium 30</span>
+        <span>45659 Mumbai</span>
+        <span>India</span>
+        </div>
+
+        <div id="cont2">
+            <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+            <div class="cont">
+                <span>+919391033946</span>
+                <span>rayhaanhowlader4@gmail.com</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
