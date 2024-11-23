@@ -1,978 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikes Best Shoes Collection</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout Form</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
 
-<style>
-    :root{
-        --bl:black;
-        --wt:white;
-    }
-    .darkmode{
-    --wt:black;
-    --bl:white;
-}
-.items{
-    display: flex;
-    justify-content: center;
-    margin-left:10px;
-}
-.item button{
-    background-color:transparent;
-    border:2px solid rgb(5, 234, 5);
-    font-size:17px;
-    font-weight: bold;
-    color:rgb(29, 217, 29);
-    padding:10px;
-}
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="cart_wrapper">
+      <div class="cart_lists">
+        <div class="cart_title">
+          <span class="material-icons-outlined">local_mall</span>
+          Your Shopping Cart
+        </div>
 
-
-
-
-.footer4 ul li:hover{
-    cursor: pointer;
-    text-decoration: underline;
-
-}
-.item button:hover{
-    cursor: pointer;
-    background-color:rgb(29, 217, 29);
-    color:white;
-}
-#item{
-    margin:3px;
-    display:flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 300px;
-    width:400px;
-    background-size:cover;
-    background-repeat: no;
-    background-position: center center;
-    background-image: url('https://img.freepik.com/premium-photo/black-sports-shoe-black-background_955012-1697.jpg');
-}
-.shoe img{
-    height: 313px;
-    width:294px;
-}
-#item1{
-
-    margin:3px;
-    display:flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 300px;
-    width:400px;
-    background-size:cover;
-    background-repeat: no;
-    background-position: center center;
-    background-image: url('https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-
-}
-#item2{
-
-    margin:3px;
-    display:flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 300px;
-    width:400px;
-    background-size:cover;
-    background-repeat: no;
-    background-position: center center;
-    background-image: url('https://images.pexels.com/photos/1503009/pexels-photo-1503009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-
-}
-
-
-.shoes{
-    flex-wrap:wrap;
-    display: flex;
-    justify-content: center;
-
-}
-.shoe span{
-    
-    font-size:20px;
-}
-.shoe{
-    color:var(--bl);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height:400px;
-    width:300px;
-}
-.footer1{
-display: flex;
-justify-content: center;
-align-items:center;
-display: flex;
-flex-direction: column;
-    height:200px;
-background-color:rgba(0, 0, 0, 0.801);
-}
-.shoes img:hover{
-    cursor:pointer;
-   
-}
-.footer1 img{
-    height:50px;
-    width: 100px;
-    margin:5px;
-}
-.l{
-    width:50%;
-    height: 0px;
-    border:2px solid white;
-}
-.li{
-    font-size:20px;
-    margin-top:20px;
-    align-items: center;
-    width:90vw;
-    display: flex;
-    color:white;
-}
-.footer2{
-    color:var(--bl);
-    margin:28px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.panel{
-    margin:10px;
-    display: flex;
-}
-.info1{
-    width:50%;
-    display: flex;
-}
-.footer3{
-    color:white;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color:rgba(0, 0, 0, 0.801);
-    height: 100px;
-}
-.footer3 i{
-margin-right: 5px;
-font-size:30px;
-}
-.footer3 span{
-    display: flex;
-    align-items: center;
-}
-.cont{
-    margin:10px;
-}
-.footer4{
-    background-color:rgba(0, 0, 0, 0.801);
-
-}
-.footer4 ul{
-    list-style-type: none;
-    color:white;
-    display: flex;
-    flex-direction: column;
-}
-.footer4{
-    justify-content: space-evenly;
-    display: flex;
-}
-.radio{
-    display: flex;
-
-    align-items: center;
-
-}
-
-.radio1{
-    display: flex;
-    align-items: center;
-    margin:5px;
-}
-.box{
-    justify-content: center;
-color:white;
-}
-
-.email{
-    background-color:rgb(45, 221, 45);
-    display: flex;
-    align-items: center;
-    width:280px;
-}
-
-.box span{
-    text-align: center;
-}
-
-.email input{
-    font-size:20px;
-    width:250px;
-}
-.payment{
-    padding-top:35px;
-    justify-content: center;
-    color:white;
-    background-color:rgba(0, 0, 0, 0.801);
-    display: flex;
-}
-.payment span{
-    margin:8px;
-}
-.footer5{
-    color:white;
-    justify-content: space-between;
-    background-color:rgba(0, 0, 0, 0.801);
-display: flex;
-}
-.co{
-    align-items: center;
-    display: flex;
-}
-.co1{
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cool1{
-    display: flex;
-    align-items: center;
-}
-.cont{
-    display: flex;
-    flex-direction: column;
-}
-.cool1 i{
-    margin:10px;
-    font-size:30px;
-}
-#cont2{
-    display: flex;
-}
-.co img{
-    margin-right:14px;
-}
-.white{
-    background-color: white;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Baloo Bhai 2", serif;
-
-}
-body{
-    background-color: var(--wt);
-}
-.header{
-    margin-left:20vw;
-    color:white;
-display: flex;
-height: 100%;
-}
-header{
- 
-    height:50px;
-    background-color:black;
-}
-.line{
-    margin-left:15px;
-    display: inline-block;
-    width:0px;
-    height:100%;
-    transform:rotate(206deg);
-    border:1px solid white;
-}
-
-.medal {
-display: flex;
-align-items: center;
-
-margin: 10px;
-padding:6px;
-font-size:24px;
-}
-.medal i{
-    margin-right:12px;
-}
-.medal span{
-font-size:15px;
-}
-.delivery{
-    display: flex;
-    align-items: center;
-margin:10px;
-padding:5px;
-}
-.delivery i{
-    font-size: 20px;
-margin-right:10px;
-}
-.bank i{
-    font-size:20px;
-    color:white;
-    margin-right:10px;
-}
-.bank{
-    padding: 0px 14px;
-    display: flex;
-    align-items: center;
-}
-
-
-
-.navbar{
-    /* height:230px; */
-    height:100px;
-    display:flex; 
-    flex-direction: row;
-    align-items: center;
- /* justify-content: center; */
- justify-content: space-around;
-}
-.navbar img{
-    margin-left:23px;
-    margin-top:13px;
-    height: 50px;
-    width: 100px;
-}
-.text{
-    background-color: var(--bl);
-    width:36vw;
-}
-
-.text input{
-    width:33vw;
-    font-size:20px;
-    padding:10px;
-    border:none;
-}
-.text{
-    background-color: white;
-    box-shadow:5px 5px 5px 5px rgb(230, 213, 213);
-}
-.text:hover{
-    box-shadow:5px 5px 5px 5px rgb(0, 209, 0);
-
-}
-.cart{
-    display: flex;
-    align-items: center;
-    margin-right:23px;
-}
-.cart a{
-    text-decoration: none;
-    padding:23px;
-    color:black;
-    font-size:18px;
-  
-    
-}
-.cart a:hover{
-    color:white;
-    font-weight: bolder;
-    background-color: rgb(0, 209, 0);
-}
-.cart i{
-    color:var(--bl);
-    cursor: pointer;
-    font-size:34px;
-}
-
-
-
-
-
-
-.angled-button {
-    display: inline-block;
-    background-color: #4caf50; 
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%); 
-}
-
-.angled-button .arrow {
-    margin-left: 5px;
-    font-size: 12px;
-}
-
-/* Optional hover effect */
-.angled-button:hover {
-    cursor: pointer;
-    background-color: #43a047; /* Slightly darker green for hover */
-}
-
-
-
-.navmenu{
-    align-items: center;
-    display: flex;
-    
-}
-.menu{
-    height: 50px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-}
-.navmenu li{
-    list-style-type:none;
-}
-.navmenu li a{
-    font-size:18px;
-    color:var(--bl);
-    padding:23px;
-    text-decoration: none;
-
-}
-.login{
-display: flex;
-align-items: center;
-}
-.login li{
-    list-style-type: none;
-}
-.login li a:hover{
-    color:white;
-    background-color:rgb(14, 208, 14);
-}
-
-
-
-.login li a{
-    font-size:20px;
-    color:black;
-    text-decoration: none;
-    padding:23px;
-}
-
-.navmenu li a:hover{
-    font-weight: bolder;
-    color:white;
-    background-color:rgb(14, 208, 14);
-}
-.bg-image{
-    display: block;
-    margin:auto;
-    justify-content: center;
-    height:400px;
-    width:85vw;
-    /* margin-left:40px; */
-}
-.patners{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bg-image img{
-width:1200px;
-height: 400px;
-}
-
-
-@media only screen and (max-width:1050px){
-    .navbar{
-        display:flex;
-        height: 230px;
-        flex-direction: column;
-    }
-}
-@media only screen and (max-width:1016px){
-    .menu{
-        justify-content: flex-start;
-        width: 100vw;
-    }
-    .navmenu li a{
-        padding:10px;
-    }
-}
-
-@media only screen and (max-width:997px){
-    .info1{
-        width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-}
-@media only screen and (max-width:863px){
-    .footer1{
-        width:100vw;
-    }
-    .footer1 img{
-
-        width:80px;
-        background-color:green;
-    
-    }
-}
-
-
-
-
-@media only screen and (max-width:799px){
-    .footer1{
-        width:100vw;
-    }
-    .footer1 img{
-
-        width:60px;
-        background-color:green;
-    
-    }
-}
-
-@media only screen and (max-width:809px){
-    .email{
-        background-color: red;
-        width:17vw;
-    }
-    .email input{
-        font-size:14px;
-        width:14vw;
-    }
-
-}
-@media only screen and (max-width:842px){
-    .header{
-        margin-left:0vw;
-    }
-    .menu{
-        flex-direction: column;
-
-    }
-    .navmenu{
-        flex-direction: column;
-    }
-    .bg-image{
-        margin-top:150px;
-    }
-
-}
-@media only screen and (max-width:700px){
-    .payment{
-        padding:0px;
-    }
-    .payment img{
-        width:60px;
-        height:40px;
-    }
-    .footer4{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .info1{
-        height:40vw;
-        width:40vw;
-    }
-    .footer3{
-        margin-top:30vw;
-    }
-    .text{
-        width:40vw;
-    }
-    .info1 img{
-        width:236px;
-    }
-}
-@media only screen and (max-width:607px){
-    .delivery{
-        display:none;
-    }
-    .patners img{
-        width:40px;
-        height: 40px;
-    }
-    .payment img{
-        width:40px;
-        height: 40px;
-    }
-    .footer5{
-        flex-wrap:wrap;
-    }
-    .email{
-        width:37vw;
-    }
-    .email input{
-        width:40vw;
-    }
-
-}
-@media only screen and (max-width:525px){
-    .footer2{
-        height:66vw;
-    }
-    .info1 img{
-        display: none;
-    }
-}
-@media only screen and (max-width:481px){
-    .medal{
-        display: none;
-    }
-    #medal{
-        display:none;
-    }
-}
-.cart a{
-    color:var(--bl);
-}
-#theme-switch{
-    margin-left:40px;
-    border:none;
-    background-color:black;
-}
-#theme-switch svg:last-child{
-    display: none;
-}
-.darkmode #theme-switch svg:first-child{
-    display: none;
-}
-.darkmode #theme-switch svg:last-child{
-    display: block;
-}
-
-</style>
-</head>
-
-<body>
-    <header>
-        <div class="header">
-
-            <div class="line"></div>
-            <img src="sports.png" alt=""  srcset="">
-            <div class="line"></div>
-            <div class="medal">
-                <i class="fa-solid fa-medal" id="cart" style="color: #ffffff;"></i>
-                <span>One of the greatest ?team sport dealer in germany</span>
+        <div class="cart_list_wrap">
+          <div class="cart_responsive">
+            <div class="tr_item">
+              <div class="td_item item_img">
+                <img src="shoe1.png" />
+              </div>
+              <div class="td_item item_name">
+                <label class="main">Nike Dunk High</label><br />
+                <label class="sub">Ref. 007891987</label>
+              </div>
+              <div class="td_item item_color">
+                <label>Blue</label>
+              </div>
+              <div class="td_item item_qty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="more">More</option>
+                </select>
+              </div>
+              <div class="td_item item_price">
+                <label data-price="260.00">$ 260.00</label>
+              </div>
+              <div class="td_item item_remove">
+                <span class="material-icons-outlined">&#10005;</span>
+              </div>
             </div>
-        <div class="line"></div>
-        <div class="delivery">
-            <i class="fa-solid fa-truck" style="color:white"></i>
-            <span>Fast Delivery</span>
-        </div>
-        <div class="line"></div>
-        <div class="bank">
-        <i class="fa-solid fa-piggy-bank"></i>
-        <span>Free delivery within India ? Germany 75 &euro;</span>
-        <button id="theme-switch">
-            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
-        
-        </button>
-    </div>    
-    </div>
-    </header>
-    <div class="navbar">
-        
-        <img src="logo.png" alt="" srcset="">
-        <div class="text">
-        <input type="text" name="" id="" placeholder="Looking for..">
-        <i class="fa-solid fa-magnifying-glass"></i>    
-    </div>
-    <div class="cart">
-       
-            <a href="sigin.html">Login</a>
-           <a href="login.html">Sign in</a>  
-           <div id="cart">
-            <button id="on" onclick="btnclicked()">
-    <i class="fa-solid fa-cart-shopping" ></i></div></button>
-</div>    
-</div>
-<div class="menu">
-    <div class="angled-button">
-        SPORTS <span class="arrow">↓</span>
-    </div>
-    
-        <ul class="navmenu">
-           <li><a href="#">Home</a></li>
-           <li><a href="#">Jersey and Fan Items</a></li>
-           <li><a href="#">Shoes</a></li>
-           <li><a href="Product.html">Products</a></li>
-           <li><a href="contactus.html">Contact Us</a></li>
-           <li><a href="profile.html">Profile</a></li>
-           <li><a href="#">Brands</a></li>
-           
-        </ul>
-<!-- <ul class="login">
-<li><a href="#">Login</a></li>
-<li><a href="#">My Account</a></li>    
-</ul> -->
-</div>
-<div class="bg-image">
 
-
-
-    <div id="carouselExampleIndicators" class="carousel slide   carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="bg.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="bg-image2.png" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://ca-times.brightspotcdn.com/dims4/default/345324b/2147483647/strip/true/crop/6122x4081+0+1/resize/1440x960!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe9%2Ff3%2Fa473ba384147a9462f12cc9c491b%2F1351750-fi-sneaker-buyer-coolkicks-jlc-16194-029.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> 
-
-
-
-    <!-- <img src="bg.png" alt="" srcset=""> -->
-</div>
-
-<div class="items">
-    <div id="item" class="item">
-        <button>Browse More >></button>
-    </div>
-    <div id="item1"class="item" >
-        <button>Browse More >></button>
-    </div>
-    <div id="item2" class="item">
-        <button>Browse More >></button>
-    </div>
-</div>
-<div class="shoes">
-    <div class="shoe">
-        <img src="shoe1.png" alt="" srcset="">
-                <span>Nikke shoes</span>
-   <span><b style="color:red">-50%</b> <del>245.5 &euro;</del> &nbsp; &nbsp; 200&euro;</span>
-    </div>
-    <div class="shoe">
-        <img src="shoe2.png" alt="" srcset="">
-        <span>Nikke shoes</span>
-        <span><b style="color:red">-50%</b> <del>245.5 &euro;</del> &nbsp; &nbsp; 200&euro;</span>
-    </div>
-    <div class="shoe">
-        <img src="shoe3.png" alt="" srcset="">
-                <span>Nikke shoes</span>
-   
-        <span><b style="color:red">-50%</b> <del>245.5 &euro;</del> &nbsp; &nbsp; 200&euro;</span>
-    </div>
-    <div class="shoe">
-        <img src="shoe4.png" alt="" srcset="">
-                <span>Nikke shoes</span>
-   
-        <span><b style="color:red">-50%</b> <del>245.5 &euro;</del> &nbsp; &nbsp; 200&euro;</span>
-    </div>
-    <div class="shoe">
-        <img src="shoe6.png" alt="" srcset="">
-        <span>Nikke shoes</span>
-   <span><b style="color:red">-50%</b> <del>245.5 &euro;</del> &nbsp; &nbsp; 200&euro;</span>
-    </div>
-    <div class="shoe">
-        <img src="shoe7.png" alt="" srcset="">
-                        <span>Nikke shoes</span>
-   <span><b style="color:red">-50%</b> <del>245.5 &euro;</del> &nbsp; &nbsp; 200&euro;</span>
-    </div>
-    <div class="shoe">
-      
-        <img src="shoe8.png" alt="" srcset="">
-                        <span>Nikke shoes</span>
-      
-        <span><b style="color:red">-50%</b> <del>245.5 &euro;</del> &nbsp; &nbsp; 200&euro;</span>
-    </div>
-    <div class="shoe">
-        <img src="shoe9.png" alt="" srcset="">
-                        <span>Nikke shoes</span>
-   <span><b style="color:red">-50%</b> <del>245.5 &euro;</del> &nbsp; &nbsp; 200&euro;</span>
-    </div>
-</div>
-<div class="footer1">
-<div class="li"><div class="l"></div>Patners<div class="l"></div></div>
-<div class="patners">
-    <img src="patner1.png" alt="" srcset="">
-    <img src="puma.png" alt="" srcset="">
-    <img src="patner3.png" alt="" srcset="">
-    <img src="patner4.png" alt="" srcset="">
-    <img src="patner6.png" alt="" srcset="">
-    <img src="patner5.png" alt="" srcset="">
-    <img src="patner7.png" alt="" srcset="">
-    <img src="patner9.png" alt="" srcset="">
-</div>
-</div>
-
-<div class="footer2">
-    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-<div class="panel">
-    <div class="info1">
-        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut, deleniti nostrum neque voluptatum harum recusandae corporis, sint quam illo labore ea magni?</p>
-        <img src="image.png" alt="" srcset="" style="float:right" height="200px" width="400px" >
-    </div>
-    <div class="info1">
-        <p> explicabo modi omnis sint ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut, deleniti nostrum neque voluptatum harum recusandae corporis, sint quam illo labore ea magni?</p>
-        <img src="image2.png" alt="" srcset="" style="float:right" height="200px" width="300px">
-    </div>
-</div>
-</div>
-
-<div class="footer3">
-    <div class="cont">
-        <span><i class="fa-solid fa-medal" style="color: #ffffff;"></i>One of the greatest</span>
-    </div>
-    <div class="cont" id="medal">
-        <span><i class="fa-solid fa-truck" style="color: #ffffff;"></i>Fastest Delivery</span>
-    </div>
-    <div class="cont">
-        <span>Follow Us</span>
-    </div>
-    <div class="cont">
-        <span><i class="fa-brands fa-facebook" style="color:rgb(1, 66,178); background-color: white;;"></i></span>
-    </div>
-    <div class="cont">
-        <span><i class=" white fa-brands fa-youtube" style="color: #b92d2d;"></i></span>
-    </div>
-    <div class="cont">
-        <span><i class="white fa-brands fa-twitter" style="color: #005eff;"></i></span>
-    </div>
-    <div class="cont">
-        <span><i class="white fa-brands fa-instagram" style="color: #000000;"></i></span>
-    </div>
-</div>
-
-<div class="footer4">
-    <ul>
-        <li><h3>Sports</h3></li>
-        <li>Soccer</li>
-        <li>Handball</li>
-        <li>Tennis</li>
-    </ul>
-
-    <ul>
-        <li><h3>Information</h3></li>
-        <li>Impressum</li>
-        <li>Conditions</li>
-        <li>Data Protection</li>
-        <li>Shipping and Charges </li>
-        <li>Delivery Terms</li>
-    </ul>
-    <ul>
-        <li><h3>Categories</h3></li>
-        <li>Shoes</li>
-        <li>Clothing</li>
-        <li>Equipment</li>
-    </ul>
-    <ul>
-        <li><h3>Brands</h3></li>
-        <li>Adidas</li>
-        <li>Alpas</li>
-        <li>Asics</li>
-        <li>Babolat</li>
-        <li>Erima</li>
-    </ul>
-  <div class="box">
-    <h3>Complaint</h3>
-    <span>If you have any queries</span>
-    <div class="radio">
-     <div class="radio1"> <label for="male">Male</label><input type="radio" name="name" id="male"></div>
-        <div class="radio1"> <label for="female">Female</label><input type="radio" name="name" id="female"></div>
-    </div>
-    <div class="email"><input type="email" name="" id="" placeholder="Enter Your email"> 
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-    </div>
-  </div>
-</div>
-<div class="payment">
-    <span><h3>Payment methods</h3></span>
-    <span><img src="visa.png" alt="" srcset=""></span>
-    <span><img src="master.png" alt="" srcset=""></span>
-    <span><img src="paypal.png" alt="" srcset=""></span>
-    <span><img src="sofort.png" alt="" srcset=""></span>
-    <span><img src="vor.png" height="34px" width="78px" alt="" srcset=""></span>
-    <span><img src="giro.png" height="34x" width="78px" alt="" srcset=""></span>
-</div>
-
-<div class="footer5">
-
-    <div class="co">
-        <img src="logo.png" height="90px" width="100px" alt="" srcset="">
-        <div class="co1">
-           <span>&copy; 2018 - Teamsport Philip</span> 
-           <span>All rights Reserved</span>
-        </div>
-    
-    </div>
-    <div class="cool1">
-
-
-        <div class="cont"> 
-        <i class="fa-solid fa-location-dot" ></i>
-        <span>We Stadium 30</span>
-        <span>45659 Mumbai</span>
-        <span>India</span>
-        </div>
-
-        <div id="cont2">
-            <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-            <div class="cont">
-                <span>+919391033946</span>
-                <span>rayhaanhowlader4@gmail.com</span>
+            <div class="tr_item">
+              <div class="td_item item_img">
+                <img src="shoe2.jpg" />
+              </div>
+              <div class="td_item item_name">
+                <label class="main">Nike Dunk SB</label><br />
+                <label class="sub">Ref. 007891987</label>
+              </div>
+              <div class="td_item item_color">
+                <label>Blue</label>
+              </div>
+              <div class="td_item item_qty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="more">More</option>
+                </select>
+              </div>
+              <div class="td_item item_price">
+                <label data-price="260.00">$ 260.00</label>
+              </div>
+              <div class="td_item item_remove">
+                <span class="material-icons-outlined">&#10005;</span>
+              </div>
             </div>
+
+            <div class="tr_item">
+              <div class="td_item item_img">
+                <img src="shoe3.jpg" />
+              </div>
+              <div class="td_item item_name">
+                <label class="main">Nike Dunk SB Low</label><br />
+                <label class="sub">Ref. 007891987</label>
+              </div>
+              <div class="td_item item_color">
+                <label>Blue</label>
+              </div>
+              <div class="td_item item_qty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="more">More</option>
+                </select>
+              </div>
+              <div class="td_item item_price">
+                <label data-price="260.00">$ 260.00</label>
+              </div>
+              <div class="td_item item_remove">
+                <span class="material-icons-outlined">&#10005;</span>
+              </div>
+            </div>
+
+            <div class="tr_item">
+              <div class="td_item item_img">
+                <img src="shoe4.jpg" />
+              </div>
+              <div class="td_item item_name">
+                <label class="main">Nike Dunk Dusty</label><br />
+                <label class="sub">Ref. 007891987</label>
+              </div>
+              <div class="td_item item _color">
+                <label>Blue</label>
+              </div>
+              <div class="td_item item_qty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="more">More</option>
+                </select>
+              </div>
+              <div class="td_item item_price">
+                <label data-price="260.00">$ 260.00</label>
+              </div>
+              <div class="td_item item_remove">
+                <span class="material-icons-outlined">&#10005;</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="back_cart">
+              <a href="#back"> Back to Shop </a>
+            </div>
+            <div class="subtotal">
+              <label>Subtotal: </label>
+              <strong>$2451.00</strong>
+            </div>
+          </div>
         </div>
+      </div>
 
-    </div>
+      <div class="cart_details">
+        <div class="cart_title">Cart Details</div>
+        <div class="form_row">
+          <div class="form_group cart_type">
+            <label class="input_label">Select Card Type</label>
 
-</div>
+            <!-- Visa Option -->
+            <input type="radio" name="cartType" required id="visa" />
+            <label class="type visa" title="Visa" for="visa">
+              <img src="visa.png" alt="Visa Icon" class="card-icon" />
+            </label>
 
-</body>
+            <!-- PayPal Option -->
+            <input type="radio" name="cartType" required id="paypal" />
+            <label class="type paypal" title="PayPal" for="paypal">
+              <img src="paypal.jpg" alt="PayPal Icon" class="card-icon" />
+            </label>
 
-<script>
-    function btnclicked(){
-        window.location.href="http://127.0.0.1:5500/checkout%20form/checkout%20form/shopping-cart-with-credit-card-checkout-formfully-responsive-vishal-sondarva/dist/index.html";
-    }
-    
-    let darkmode=localStorage.getItem('darkmode');
-    const themeSwitch=document.getElementById('theme-switch');
+            <!-- Rupay Option -->
+            <input type="radio" name="cartType" required id="rupay" />
+            <label class="type rupay" title="Rupay" for="rupay">
+              <img src="rupay.jpg" alt="Rupay Icon" class="card-icon" />
+            </label>
+          </div>
 
-    const  enabledDarkmode=()=>{
-        document.body.classList.add('darkmode');
-        localStorage.setItem('darkmode','active');
-    }
-    const disableDarkmode=()=>{
-        console.log("disabled triggered");
-        document.body.classList.remove("darkmode")
-        localStorage.setItem('darkmode',null);
-    }
-if(darkmode=="active") enabledDarkmode();
-    themeSwitch.addEventListener('click',()=>{
-        darkmode=localStorage.getItem("darkmode");
-        darkmode!='active'? enabledDarkmode() : disableDarkmode();
-    })
-    
-    </script>
+          <div class="form_group">
+            <label class="input_label">Card Number</label>
+            <input
+              type="text"
+              class="input"
+              id="card_number"
+              name="card"
+              min="16"
+              max="16"
+              placeholder="0000 0000 0000 0000"
+              onkeypress="return checkDigit(event)"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form_group w_75">
+            <label class="input_label">Expiry Date</label>
+            <input
+              type="text"
+              class="input"
+              id="card_date"
+              placeholder="MM / YY"
+              onkeypress="return checkDigit(event)"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form_group w_25">
+            <label class="input_label">CVV</label>
+            <input
+              type="password"
+              class="input"
+              min="3"
+              max="3"
+              placeholder="***"
+              onkeypress="return checkDigit(event)"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <button class="btn"><a href="http://127.0.0.1:5500/checkout-page/checkout-page/checkout-page/dist/index.html?checkout-email=&checkout-phone=&checkout-name=&checkout-address=&checkout-city=&checkout-country=&checkout-postal=#!">Checkout</a></button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js" defer></script>
+  </body>
 </html>
