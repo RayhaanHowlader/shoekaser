@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout Form</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="cart_wrapper">
+      <div class="cart_lists">
+        <div class="cart_title">
+          <span class="material-icons-outlined">local_mall</span>
+          Your Shopping Cart
+        </div>
+
+        <div class="cart_list_wrap">
+          <div class="cart_responsive">
+            <div class="tr_item">
+              <div class="td_item item_img">
+                <img src="shoe1.png" />
+              </div>
+              <div class="td_item item_name">
+                <label class="main">Nike Dunk High</label><br />
+                <label class="sub">Ref. 007891987</label>
+              </div>
+              <div class="td_item item_color">
+                <label>Blue</label>
+              </div>
+              <div class="td_item item_qty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="more">More</option>
+                </select>
+              </div>
+              <div class="td_item item_price">
+                <label data-price="260.00">$ 260.00</label>
+              </div>
+              <div class="td_item item_remove">
+                <span class="material-icons-outlined">&#10005;</span>
+              </div>
+            </div>
+
+            <div class="tr_item">
+              <div class="td_item item_img">
+                <img src="shoe2.jpg" />
+              </div>
+              <div class="td_item item_name">
+                <label class="main">Nike Dunk SB</label><br />
+                <label class="sub">Ref. 007891987</label>
+              </div>
+              <div class="td_item item_color">
+                <label>Blue</label>
+              </div>
+              <div class="td_item item_qty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="more">More</option>
+                </select>
+              </div>
+              <div class="td_item item_price">
+                <label data-price="260.00">$ 260.00</label>
+              </div>
+              <div class="td_item item_remove">
+                <span class="material-icons-outlined">&#10005;</span>
+              </div>
+            </div>
+
+            <div class="tr_item">
+              <div class="td_item item_img">
+                <img src="shoe3.jpg" />
+              </div>
+              <div class="td_item item_name">
+                <label class="main">Nike Dunk SB Low</label><br />
+                <label class="sub">Ref. 007891987</label>
+              </div>
+              <div class="td_item item_color">
+                <label>Blue</label>
+              </div>
+              <div class="td_item item_qty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="more">More</option>
+                </select>
+              </div>
+              <div class="td_item item_price">
+                <label data-price="260.00">$ 260.00</label>
+              </div>
+              <div class="td_item item_remove">
+                <span class="material-icons-outlined">&#10005;</span>
+              </div>
+            </div>
+
+            <div class="tr_item">
+              <div class="td_item item_img">
+                <img src="shoe4.jpg" />
+              </div>
+              <div class="td_item item_name">
+                <label class="main">Nike Dunk Dusty</label><br />
+                <label class="sub">Ref. 007891987</label>
+              </div>
+              <div class="td_item item _color">
+                <label>Blue</label>
+              </div>
+              <div class="td_item item_qty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="more">More</option>
+                </select>
+              </div>
+              <div class="td_item item_price">
+                <label data-price="260.00">$ 260.00</label>
+              </div>
+              <div class="td_item item_remove">
+                <span class="material-icons-outlined">&#10005;</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="back_cart">
+              <a href="#back"> Back to Shop </a>
+            </div>
+            <div class="subtotal">
+              <label>Subtotal: </label>
+              <strong>$2451.00</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart_details">
+        <div class="cart_title">Cart Details</div>
+        <div class="form_row">
+          <div class="form_group cart_type">
+            <label class="input_label">Select Card Type</label>
+
+            <!-- Visa Option -->
+            <input type="radio" name="cartType" required id="visa" />
+            <label class="type visa" title="Visa" for="visa">
+              <img src="visa.png" alt="Visa Icon" class="card-icon" />
+            </label>
+
+            <!-- PayPal Option -->
+            <input type="radio" name="cartType" required id="paypal" />
+            <label class="type paypal" title="PayPal" for="paypal">
+              <img src="paypal.jpg" alt="PayPal Icon" class="card-icon" />
+            </label>
+
+            <!-- Rupay Option -->
+            <input type="radio" name="cartType" required id="rupay" />
+            <label class="type rupay" title="Rupay" for="rupay">
+              <img src="rupay.jpg" alt="Rupay Icon" class="card-icon" />
+            </label>
+          </div>
+
+          <div class="form_group">
+            <label class="input_label">Card Number</label>
+            <input
+              type="text"
+              class="input"
+              id="card_number"
+              name="card"
+              min="16"
+              max="16"
+              placeholder="0000 0000 0000 0000"
+              onkeypress="return checkDigit(event)"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form_group w_75">
+            <label class="input_label">Expiry Date</label>
+            <input
+              type="text"
+              class="input"
+              id="card_date"
+              placeholder="MM / YY"
+              onkeypress="return checkDigit(event)"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form_group w_25">
+            <label class="input_label">CVV</label>
+            <input
+              type="password"
+              class="input"
+              min="3"
+              max="3"
+              placeholder="***"
+              onkeypress="return checkDigit(event)"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <button class="btn"><a href="http://127.0.0.1:5500/checkout-page/checkout-page/checkout-page/dist/index.html?checkout-email=&checkout-phone=&checkout-name=&checkout-address=&checkout-city=&checkout-country=&checkout-postal=#!">Checkout</a></button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js" defer></script>
+  </body>
+</html>
