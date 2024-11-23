@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<style>
+
+    button{
+        font-size:16px;
+        padding:12px;
+        width:450px;
+        background-color:transparent;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    button img{
+     
+        margin:0px 8px;
+        height:30px;
+        width:30px;
+    }
+    *{
+
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+.container{
+    display: flex;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    /* margin-top:100px; */
+    height: 100%;
+    width: 50%;
+
+   align-items: center;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    background-image: url('https://img.freepik.com/premium-photo/pair-nike-shoes-with-neon-lights-them_754951-18092.jpg?w=360');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center center;
+    /* height:700px; */
+    width:50%;
+}
+
+.or{
+  font-size:20px;
+  margin:8px;
+    height:43px;
+    width:450px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.line{
+    width:50%;
+    border:2px solid grey;
+}
+.form label{
+    margin: 5px;
+    margin:6px;
+    font-size:20px;
+    width: 450px;
+}
+.inp{
+    font-size:20px;
+    padding:20px;
+    margin: 10px;
+    height: 35px;
+    width:450px;
+}
+.ch{
+    width:30px;
+}
+.head{
+    font-size:30px;
+    margin:8px;
+}
+.check{
+font-size:20px;
+    width: 450px;
+}
+.heading{
+    font-size:2.6rem;
+}
+.sign{
+    font-size:21px;
+    background-color: black;
+    color:white;
+    border:none;
+}
+.ft{
+    font-size:20px;
+}
+.ft a{
+    color:black;
+    text-decoration: none;
+}
+.gg{
+    font-size:20px;   
+}
+.gg:hover{
+    cursor:pointer;
+    background-color:black;
+    color:white;
+}
+
+.join a:hover{
+    background-color:blue;
+}
+
+.join{
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    font-size:20px;
+    margin:20px 0px;
+    padding:0px 10px;
+}
+.join a{
+    border:2px solid white;
+    border-radius: 10px;
+    padding:10px;
+    text-decoration: none;
+    color:white;
+}
+.ft a:hover{
+    text-decoration: underline;
+}
+
+.h{
+    font-size:3.3rem;
+}
+.para{
+    font-size:25px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1 class="heading">Create Your Account</h1>
+            <p class="head">Welcome to shoekaser</p>
+<button class="gg"><img src="https://static-00.iconduck.com/assets.00/google-icon-1024x1024-ilkrdfcp.png" alt="" srcset="">Sign up with Google</button>
+<div class="or">
+    <div class="line"></div>or<div class="line"></div>
+
+</div>
+<label for="name">Name</label>
+<input   type="text" placeholder="Enter Your name" name="" id="name" class="inp">
+<label for="email">Email</label>
+<input   type="email" placeholder="Enter Your email" name="" id="email" class="inp">
+<label for="password">Password</label>
+<input   type="password" name="" id="password" placeholder="Enter Your Password" class="inp">
+<label for="retype">Retype</label>
+<input   type="password" placeholder="retype the entered password" name="retype" id="" class="inp">
+<div class="check"><input class="ch" type="checkbox" name="" id="">I accept all terms and conditions</div>
+<button class="sign">Sign up</button>
+<div class="ft">Already have a account? <a href="">sign in</a></div>
+</div>
+
+        <div class="image">
+            <div class="join"><a href="">Join Us</a></div>
+            <h1 class="h">Welcome To shoekaser</h1>
+            <p class="para">Best Shoe Brands Available Here</p>
+        </div>
+    </div>
+</body>
+</html>
